@@ -59,7 +59,7 @@ Manager	Add/Edit/Remove products, order from suppliers, view profit charts (mont
 
 Clone the repository:
 
-git clone https://github.com/YourUsername/Inventory-Management-System.git
+git clone https://github.com/OmarNagi74/inventory-management-system.git
 
 
 Set up MySQL database and import the provided .sql file
@@ -75,6 +75,5 @@ Run the application
 This project is licensed under the MIT License – see the LICENSE
  file for details.
 
-لو تحب، أقدر أعمللك نسخة مع تصميم badges لكل user role وكده README هيبقى أكتر وضوح وجاذبية للـ GitHub.
 
 تحب أعملها دلوقتي؟
