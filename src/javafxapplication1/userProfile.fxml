@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="javafxapplication1.UserProfileController" prefWidth="500" prefHeight="520">
+    <children>
+        <!-- Header with Back button and Dark Mode toggle -->
+        <HBox AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" alignment="CENTER_LEFT" spacing="15">
+            <children>
+                <Button text="Back" onAction="#goBack" prefHeight="35.0" prefWidth="80.0"/>
+                <Label text="User Profile" style="-fx-font-size: 22; -fx-font-weight: bold;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <!-- <ToggleButton fx:id="darkModeToggle" text="🌙 Dark" onAction="#toggleDarkMode"/> -->
+            </children>
+        </HBox>
+        
+        <VBox spacing="16" alignment="CENTER" 
+              AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="70.0">
+            <children>
+                <GridPane hgap="15" vgap="12" alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints prefWidth="130" halignment="RIGHT"/>
+                        <ColumnConstraints prefWidth="280"/>
+                    </columnConstraints>
+
+                    <children>
+                        <Label text="ID:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtId" editable="false" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Username:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtUsername" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Role:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtRole" editable="false" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Address:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtAddress" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Email:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtEmail" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Phone:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <TextField fx:id="txtPhone" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+                    </children>
+                </GridPane>
+                
+                <HBox spacing="15" alignment="CENTER">
+                    <children>
+                        <Button text="Save Profile" onAction="#saveProfile" prefHeight="35.0" prefWidth="120.0"/>
+                    </children>
+                </HBox>
+
+                <Separator />
+                
+                <Label text="Change Password" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+                
+                <GridPane hgap="15" vgap="12" alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints prefWidth="130" halignment="RIGHT"/>
+                        <ColumnConstraints prefWidth="280"/>
+                    </columnConstraints>
+                    <children>
+                        <Label text="Current Password:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <PasswordField fx:id="txtCurrentPwd" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                        <Label text="New Password:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <PasswordField fx:id="txtNewPwd" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                    </children>
+                </GridPane>
+                
+                <HBox spacing="15" alignment="CENTER">
+                    <children>
+                        <Button text="Change Password" onAction="#changePassword" prefHeight="35.0" prefWidth="150.0"/>
+                        <Button text="Logout" onAction="#logout" prefHeight="35.0" prefWidth="100.0" styleClass="button-secondary"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
