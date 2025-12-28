@@ -1,34 +1,80 @@
-Bullet Club GUI App 🚀
+Inventory Management System 🏬
 
-Bullet Club GUI App is a JavaFX-based Inventory Management System built with MVC architecture and MySQL for data management.
-It helps businesses and teams track, manage, and update inventory in a simple and efficient way.
+Inventory Management System is a desktop application built using JavaFX, Java, and MySQL, featuring full authentication and role-based access control.
+The system is designed to streamline inventory operations, order management, and reporting for businesses.
 
 💡 Project Idea
 
-The app provides a centralized system where users can:
+The system allows multiple types of users with specific roles and permissions to manage and interact with the inventory efficiently:
 
-Add, update, and delete products
+Admin: Full control over user accounts (view all users, edit roles, delete accounts).
 
-Search and monitor inventory in real time
+Customer: Browse products, add items to the cart, place orders, and track order statuses.
 
-Ensure accurate stock management for better decision-making
+Employee: View inventory, manage order statuses (in progress or delivered).
+
+Manager: Manage inventory (add, remove, edit products), order from suppliers, track profits (monthly/yearly), and print reports.
+
+This system ensures secure authentication, proper access control, and seamless inventory management.
 
 ⚙️ Features
 
-Clean and interactive GUI using JavaFX
+Role-based authentication for Admin, Customer, Employee, and Manager
 
-CRUD operations: add, edit, delete, search products
+Admin dashboard: Manage users, edit roles, delete accounts
 
-Real-time database updates with MySQL
+Customer dashboard: Browse products, add to cart, view order history and status
 
-Organized code using MVC architecture
+Employee dashboard: Monitor products, update order statuses
 
-Scalable, maintainable, and easy to extend
+Manager dashboard: Inventory management, order from suppliers, profit charts, and printable reports
 
-🛠 Technologies
+CRUD operations for products and orders
+
+Interactive GUI with JavaFX
+
+Data persistence and connectivity using MySQL
+
+Monthly and yearly profit charts with export/print functionality
+
+🛠 Technologies Used
+
+Java – core application logic
 
 JavaFX – GUI development
 
-MVC Architecture – clear separation of concerns
+MVC Architecture – organized and maintainable code structure
 
-MySQL – reliable database connectivity
+MySQL – database storage and management
+
+Authentication & Role-based Access Control – secure user management
+
+📈 User Roles Overview
+Role	Permissions
+Admin	View all users, edit user roles, delete user accounts
+Customer	View all products, add products to cart, place orders, track order status
+Employee	View products, update order statuses (In Progress / Delivered)
+Manager	Add/Edit/Remove products, order from suppliers, view profit charts (monthly/yearly), print reports
+🚀 Installation
+
+Clone the repository:
+
+git clone https://github.com/YourUsername/Inventory-Management-System.git
+
+
+Set up MySQL database and import the provided .sql file
+
+Update database connection credentials in the project
+
+Open the project in your IDE (IntelliJ, Eclipse, etc.)
+
+Run the application
+
+📄 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
+
+لو تحب، أقدر أعمللك نسخة مع تصميم badges لكل user role وكده README هيبقى أكتر وضوح وجاذبية للـ GitHub.
+
+تحب أعملها دلوقتي؟
